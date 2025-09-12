@@ -1,23 +1,15 @@
-{ 
+{
   "compilerOptions": {   
     "module": "commonjs",
     "target": "es2020",
-    "types": ["node"],
+    "types": ["vitest/globals"],
     "baseUrl": "./",
     "paths": {
       "@/*": ["./src/*"]
     },
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
-    "noUncheckedIndexedAccess": true,
     "strict": true,
-    "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
-    "moduleDetection": "force",
-    "skipLibCheck": true,
-  }
+    "skipLibCheck": true
+  },
+  "forceConsistentCasingInFileNames": true,
+  "esModuleInterop": true
 }
