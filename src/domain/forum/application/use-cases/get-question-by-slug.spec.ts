@@ -13,14 +13,14 @@ describe('Get Question By Slug', () => {
   })
 
   it('should be able to get a question by slug', async () => {
-    const questionObj = makeQuestion({
+    const mock = makeQuestion({
       slug: Slug.create('example-question'),
     })
 
-    await inMemoryRepository.create(questionObj)
+    await inMemoryRepository.create(mock)
 
     const { question } = await sut.execute({ slug: 'example-question' })
 
-    expect(question.content).toEqual('question content')
+    expect(question.title).toEqual(mock.title)
   })
 })
