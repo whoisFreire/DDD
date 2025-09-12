@@ -8,8 +8,8 @@
       "@/*": ["./src/*"]
     },
     "strict": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "esModuleInterop": true,
   },
   "forceConsistentCasingInFileNames": true,
-  "esModuleInterop": true
 }
